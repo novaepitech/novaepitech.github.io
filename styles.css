@@ -270,7 +270,7 @@ body {
     color: #000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .marseille-hotels-container {
         max-width: 100%;
     }
