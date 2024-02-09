@@ -312,6 +312,15 @@ body {
     color: #000;
 }
 
+.marseille-card:hover, .trending-card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.marseille-card, .trending-card {
+    transition: transform 0.3s ease;
+}
+
 .show-more {
     margin-top: 3vh;
     margin-bottom: 1vh;
@@ -321,6 +330,112 @@ body {
     text-decoration: none;
     color: #000;
 }
+
+/* Activites */
+
+.activities-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 100px;
+    justify-content: space-evenly;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.vieux-port, .parc-calanques {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fffefe;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0.5vh;
+    padding-bottom: 0;
+}
+
+.vieux-port img, .parc-calanques img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.fort-ile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.fort-ile-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.fort-de-pomegues {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fffefe;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0.5vh;
+    padding-bottom: 0;
+}
+
+.iles-du-frioul {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fffefe;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0.5vh;
+    padding-bottom: 0;
+}
+
+.notre-dame-parc-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+.notre-dame-parc-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.notre-dame-de-la-garde {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fffefe;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0.5vh;
+    padding-bottom: 0;
+}
+
+.parc-longchamp {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fffefe;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0.5vh;
+    padding-bottom: 0;
+}
+
+.vieux-port, .parc-calanques, .fort-de-pomegues, .iles-du-frioul, .notre-dame-de-la-garde, .parc-longchamp {
+    transition: transform 0.3s ease;
+}
+
+.vieux-port:hover, .parc-calanques:hover, .fort-de-pomegues:hover, .iles-du-frioul:hover, .notre-dame-de-la-garde:hover, .parc-longchamp:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+/* Media queries */
 
 @media (max-width: 768px) {
     .hotels-container {
