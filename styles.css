@@ -209,7 +209,6 @@ body {
     align-items: center;
     border-radius: 15px;
     background-color: #f3f2f3;
-    margin-bottom: 100px;
     max-width: 70%;
 }
 
@@ -217,14 +216,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 1vw;
 }
 
 .marseille-hotels-container h3 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .trending-hotels-container {
@@ -255,7 +254,7 @@ body {
     background-color: #fffefe;
     border-radius: 20px;
     overflow: hidden;
-    padding: 0.5vh;
+    padding: 5px;
     padding-bottom: 0;
 }
 
@@ -264,7 +263,7 @@ body {
 }
 
 .trending-card {
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 20px;
     margin-right: 20px;
     margin-left: 30px;
@@ -304,8 +303,20 @@ body {
     border-bottom-left-radius: 20px;
 }
 
-.trending-card-description i:nth-child(3) {
+.trending-card-description {
     padding-left: 0.4vw;
+}
+
+.trending-card-description i {
+    margin-top: 11vh;
+}
+
+.trending-card-description p, h4 {
+    margin: 0;
+}
+
+.trending-card-description h4 {
+    margin-top: 5px;
 }
 
 .marseille-hotels-container a {
@@ -322,8 +333,8 @@ body {
 }
 
 .show-more {
-    margin-top: 3vh;
-    margin-bottom: 1vh;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
 }
 
 .show-more a {
@@ -336,11 +347,17 @@ body {
 .activities-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 100px;
-    justify-content: space-evenly;
-    gap: 20px;
+    justify-content: space-around;
+    /* gap: 30px; */
     max-width: 100%;
+    height: 400px;
+}
+
+.marseille-activities {
+    margin-top: 50px;
 }
 
 .vieux-port, .parc-calanques {
@@ -348,12 +365,12 @@ body {
     background-color: #fffefe;
     border-radius: 20px;
     overflow: hidden;
-    padding: 0.5vh;
     padding-bottom: 0;
+    width: 20%;
 }
 
 .vieux-port img, .parc-calanques img {
-    width: 300px;
+    /* width: 300px; */
     height: 400px;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -365,11 +382,13 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 50px;
+    max-height: 400px;
+    width: 20%;
 }
 
 .fort-ile-container img {
     width: 100%;
-    height: 200px;
+    max-height: 200px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -380,7 +399,6 @@ body {
     background-color: #fffefe;
     border-radius: 20px;
     overflow: hidden;
-    padding: 0.5vh;
     padding-bottom: 0;
 }
 
@@ -389,7 +407,6 @@ body {
     background-color: #fffefe;
     border-radius: 20px;
     overflow: hidden;
-    padding: 0.5vh;
     padding-bottom: 0;
 }
 
@@ -398,11 +415,13 @@ body {
     flex-direction: column;
     gap: 50px;
     justify-content: space-evenly;
+    max-height: 400px;
+    width: 20%;
 }
 
 .notre-dame-parc-container img {
     width: 100%;
-    height: 200px;
+    height: 120px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -413,7 +432,6 @@ body {
     background-color: #fffefe;
     border-radius: 20px;
     overflow: hidden;
-    padding: 0.5vh;
     padding-bottom: 0;
 }
 
@@ -422,7 +440,6 @@ body {
     background-color: #fffefe;
     border-radius: 20px;
     overflow: hidden;
-    padding: 0.5vh;
     padding-bottom: 0;
 }
 
