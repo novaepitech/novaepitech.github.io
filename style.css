@@ -291,7 +291,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     height: 35%;
-    padding-left: 0.5vw;
+    padding-left: 5px;
 }
 
 .marseille-card-description p,
@@ -308,7 +308,7 @@ h4 {
     width: 25%;
     gap: 2px;
     justify-content: space-evenly;
-    padding-left: 0.2vw;
+    padding-left: 10px;
     height: 10%;
 }
 
@@ -350,7 +350,7 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 1vw;
+    padding-left: 20px;
 }
 
 .trending-card-description p,
@@ -407,7 +407,11 @@ h4 {
     margin-bottom: 50px;
     justify-content: space-evenly;
     max-width: 100%;
-    height: 400px;
+    /* height: 400px; */
+}
+
+.activities-card {
+    width: 100%;
 }
 
 .marseille-activities {
@@ -631,12 +635,21 @@ ul {
         margin: 0;
     }
 
+    .marseille-header h3 {
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+
     .trending-hotels-container {
         border-radius: 0;
     }
 
     .marseille-hotels-container {
         background-color: white;
+        height: auto;
+    }
+
+    .trending-hotels-container {
         height: auto;
     }
 
@@ -647,11 +660,36 @@ ul {
         margin: 20px;
     }
 
+    .trending-card {
+        height: 170px;
+    }
+
+    .trending-hotels {
+        gap: 0px;
+    }
+
     .marseille-card {
         height: 250px;
+    }
+
+    .marseille-hotels {
+        gap: 0px;
+    }
+
+    .show-more h4 {
+        padding: 40px;
+        padding-left: 20px;
+        padding-top: 10px;
+        margin-left: 0px;
+        font-size: 1.2rem;
     }
 
     .search-container {
         max-width: 100%;
     }
+
+    .activities-card {
+        width: 100%;
+    }
+
 }
