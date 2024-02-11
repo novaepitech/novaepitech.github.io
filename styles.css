@@ -5,11 +5,16 @@
 
 body {
     font-family: juniorFont;
+    margin: 0;
 }
 
 @font-face {
     font-family: logoFont;
     src: url(font/Ruda-Regular.ttf);
+}
+
+:root {
+    --light-gray: #f3f2f3;
 }
 
 .logo {
@@ -117,6 +122,10 @@ body {
     font-family: juniorFont;
 }
 
+.search-input-right i {
+    display: none;
+}
+
 .search-input-right:hover {
     background-color: #0056b3;
 }
@@ -182,6 +191,7 @@ body {
 }
 
 .available-places p {
+    padding-left: 10px;
     font-weight: 500;
 }
 
@@ -199,54 +209,70 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-around;
 }
 
 .marseille-hotels-container {
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
-    align-items: center;
     border-radius: 15px;
-    background-color: #f3f2f3;
+    background-color: var(--light-gray);
     max-width: 70%;
+    height: 75vh;
+    row-gap: 0px;
+}
+
+.marseille-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 0%;
+}
+
+.marseille-header h3 {
+    margin: 0;
+    font-weight: 800;
+    margin-left: 50px;
 }
 
 .marseille-hotels {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 1vw;
-}
-
-.marseille-hotels-container h3 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 70%;
 }
 
 .trending-hotels-container {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    background-color: #f3f2f3;
-    max-width: 20%;
+    background-color: var(--light-gray);
+    max-width: 25%;
 }
 
-.trending-hotels-container h3 {
-    margin-left: 30px;
-    padding: 1.5vh;
+.trending-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding-left: 40px;
+    height: 75px;
+}
+
+.trending-header h3 {
+    font-weight: 800;
 }
 
 .trending-hotels {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.trending-card {
-    display: flex;
+    align-items: space-evenly;
+    justify-content: center;
+    gap: 30px;
 }
 
 .marseille-card {
@@ -256,47 +282,64 @@ body {
     overflow: hidden;
     padding: 5px;
     padding-bottom: 0;
+    width: 25%;
+    height: 25vh;
 }
 
-.marseille-card h4, p {
-    margin: 1vh;
+.marseille-card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 35%;
+    padding-left: 0.5vw;
+}
+
+.marseille-card-description p,
+h4 {
+    margin: 0;
+}
+
+.marseille-card-description p {
+    padding-top: 5px;
+}
+
+.marseille-card-rating {
+    display: flex;
+    width: 25%;
+    gap: 2px;
+    justify-content: space-evenly;
+    padding-left: 0.2vw;
+    height: 10%;
 }
 
 .trending-card {
+    display: flex;
     padding: 5px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fffefe;
     border-radius: 20px;
     overflow: hidden;
-}
-
-.marseille-card {
-    width: 25%;
-    height: 50%;
-}
-
-.trending-card {
     width: 80%;
+    height: 30%;
+}
+
+.marseille-card-image {
+    height: 65%;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 .marseille-card img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.marseille-card i:nth-child(4) {
-    padding-left: 0.4vw;
-}
-
 .trending-card img {
     width: 40%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
     margin: 1px;
     border-top-left-radius: 20px;
@@ -304,40 +347,52 @@ body {
 }
 
 .trending-card-description {
-    padding-left: 0.4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1vw;
 }
 
-.trending-card-description i {
-    margin-top: 11vh;
-}
-
-.trending-card-description p, h4 {
+.trending-card-description p,
+h4 {
     margin: 0;
 }
 
+.trending-card-rating {
+    padding-bottom: 10px;
+}
+
 .trending-card-description h4 {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .marseille-hotels-container a {
     color: #000;
 }
 
-.marseille-card:hover, .trending-card:hover {
+.marseille-card:hover,
+.trending-card:hover {
     cursor: pointer;
     transform: translateY(-10px);
 }
 
-.marseille-card, .trending-card {
+.marseille-card,
+.trending-card {
     transition: transform 0.3s ease;
 }
 
 .show-more {
-    margin-top: 8vh;
-    margin-bottom: 4vh;
+    width: 100%;
+    height: 5%;
+}
+
+.show-more h4 {
+    margin-left: 50px;
 }
 
 .show-more a {
+    /* margin-top: 8vh;
+    margin-bottom: 4vh; */
     text-decoration: none;
     color: #000;
 }
@@ -348,10 +403,9 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 100px;
-    justify-content: space-around;
-    /* gap: 30px; */
+    align-items: stretch;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
     max-width: 100%;
     height: 400px;
 }
@@ -360,18 +414,31 @@ body {
     margin-top: 50px;
 }
 
-.vieux-port, .parc-calanques {
+.marseille-activities h3:nth-child(1) {
+    margin-left: 50px;
+    padding: 1vh;
+}
+
+.marseille-activities h3 {
+    margin-left: 20px;
+    /* padding: 1.5vh; */
+}
+
+.vieux-port,
+.parc-calanques {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fffefe;
     border-radius: 20px;
     overflow: hidden;
     padding-bottom: 0;
     width: 20%;
+    height: 400px;
 }
 
-.vieux-port img, .parc-calanques img {
-    /* width: 300px; */
-    height: 400px;
+.vieux-port img,
+.parc-calanques img {
+    width: 100%;
+    height: 85%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -380,15 +447,15 @@ body {
 .fort-ile-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     gap: 50px;
-    max-height: 400px;
+    justify-content: space-evenly;
+    height: 400px;
     width: 20%;
 }
 
 .fort-ile-container img {
     width: 100%;
-    max-height: 200px;
+    height: 120px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -415,7 +482,7 @@ body {
     flex-direction: column;
     gap: 50px;
     justify-content: space-evenly;
-    max-height: 400px;
+    height: 400px;
     width: 20%;
 }
 
@@ -443,18 +510,114 @@ body {
     padding-bottom: 0;
 }
 
-.vieux-port, .parc-calanques, .fort-de-pomegues, .iles-du-frioul, .notre-dame-de-la-garde, .parc-longchamp {
+.vieux-port,
+.parc-calanques,
+.fort-de-pomegues,
+.iles-du-frioul,
+.notre-dame-de-la-garde,
+.parc-longchamp {
     transition: transform 0.3s ease;
 }
 
-.vieux-port:hover, .parc-calanques:hover, .fort-de-pomegues:hover, .iles-du-frioul:hover, .notre-dame-de-la-garde:hover, .parc-longchamp:hover {
+.vieux-port:hover,
+.parc-calanques:hover,
+.fort-de-pomegues:hover,
+.iles-du-frioul:hover,
+.notre-dame-de-la-garde:hover,
+.parc-longchamp:hover {
     cursor: pointer;
     transform: translateY(-10px);
+}
+
+/* Footer */
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-bottom: 1px solid transparent;
+    margin-bottom: 0.5rem;
+    display: inline-flex;
+}
+
+.nav-item a:hover {
+    border-bottom: 1px solid black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.footer_inner {
+    width: 100%;
+    padding-top: 2rem;
+    margin: 1rem 0;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: var(--light-gray)
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto 0 30px;
+    padding: 0 1rem;
+}
+
+.nav-item {
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .layout {
+        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 2rem;
+    }
+
+    .nav-item {
+        width: 25%;
+    }
 }
 
 /* Media queries */
 
 @media (max-width: 768px) {
+
+    .navbar-left h1 {
+        display: none;
+    }
+
+    .description h4 {
+        font-size: xx-large;
+        margin: 0 0 10px 20px;
+    }
+
+    .description p {
+        font-size: larger;
+        margin: 0 0 40px 20
+    }
+
+    .rechercher {
+        display: none;
+    }
+
+    .search-input-right i {
+        display: inline;
+    }
+
+    .search-input-right {
+        border-radius: 15px;
+    }
+
     .hotels-container {
         flex-direction: column;
         align-items: center;
@@ -474,10 +637,21 @@ body {
 
     .marseille-hotels-container {
         background-color: white;
+        height: auto;
     }
 
     .marseille-card,
     .trending-card {
         width: 100%;
+        height: auto;
+        margin: 20px;
+    }
+
+    .marseille-card {
+        height: 250px;
+    }
+
+    .search-container {
+        max-width: 100%;
     }
 }
