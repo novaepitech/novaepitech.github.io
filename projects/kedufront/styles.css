@@ -18,7 +18,6 @@ body {
 /* Header */
 
 .background-image {
-    background-color: #f5f5f5;
     background-image: url('https://api.kedufront.juniortaker.com/item/picture/1');
     background-size: cover;
     background-position: center;
@@ -271,8 +270,36 @@ header {
         display: none;
     }
 
+    body {
+        background-color: #ffffff;
+    }
+
+    .background-image {
+        background-image: url('https://api.kedufront.juniortaker.com/item/picture/1');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position-y: 80px;
+        height: 50vh;
+        margin-bottom: 400px;
+    }
+
     .hero {
-        margin-top: 30vh;
+        margin-top: 40vh;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        button {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
     }
 
     .products {
