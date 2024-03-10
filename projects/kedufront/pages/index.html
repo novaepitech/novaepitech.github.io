@@ -5,7 +5,7 @@
     <title>DouxCompagnons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
     <script src="https://kit.fontawesome.com/9b7c451e6f.js" crossorigin="anonymous"></script>
 </head>
 
@@ -26,7 +26,9 @@
                 <h3>Livres</h3>
                 <h3>Accessoires</h3>
                 <div class="profile-logo"><i class="fa-solid fa-user fa-lg"></i></div>
-                <div class="profile-logo"><i class="fa-solid fa-bag-shopping fa-lg"></i></div>
+                <a href="shopping-cart.html" style="text-decoration: none; color: black;">
+                    <div class="profile-logo"><i class="fa-solid fa-bag-shopping fa-lg"></i></div>
+                </a>
             </div>
         </header>
         <section class="hero-container">
@@ -44,19 +46,26 @@
         <h1>Achetez en stock !</h1>
     </div>
     <main class="products home-page">
-        <a href="product-page.html" class="product-wrapper">
-            <div class="product"></div>
-        </a>
-        <a href="product-page.html" class="product-wrapper">
-            <div class="product"></div>
-        </a>
-        <a href="product-page.html" class="product-wrapper">
-            <div class="product"></div>
-        </a>
-        <a href="product-page.html" class="product-wrapper">
-            <div class="product"></div>
-        </a>
-        <product></product>
+        <div class="product">
+            <a href="product-page.html?id=2" class="product-wrapper">
+                <div class="product-details"></div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product-page.html?id=2" class="product-wrapper">
+                <div class="product-details"></div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product-page.html?id=3" class="product-wrapper">
+                <div class="product-details"></div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product-page.html?id=4" class="product-wrapper">
+                <div class="product-details"></div>
+            </a>
+        </div>
     </main>
     <footer class="footer">
         <div class="container">
@@ -85,10 +94,11 @@
                 </div>
             </div>
         </div>
+        
     </footer>
     
 
-    <script src="script.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>

@@ -2,10 +2,10 @@
 <html lang="fr">
 
 <head>
-    <title>DouxCompagnons</title>
+    <title>Nos produits</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
     <script src="https://kit.fontawesome.com/9b7c451e6f.js" crossorigin="anonymous"></script>
 </head>
 
@@ -13,27 +13,57 @@
     <header>
         <div class="logo">
             <i class="fa-solid fa-store fa-xl"></i>
-            <a href="index.html"><h1>DouxCompagnons</h1></a>
+            <a href="index.html">
+                <h1>DouxCompagnons</h1>
+            </a>
         </div>
         <div class="categories">
             <h3>Nouveautés</h3>
-            <h3>Peluches</h3>
+            <a href="products-collection.html" style="text-decoration: none; color: black;">
+                <h3>Peluches</h3>
+            </a>
             <h3>Livres</h3>
             <h3>Accessoires</h3>
             <div class="profile-logo"><i class="fa-solid fa-user fa-lg"></i></div>
-            <div class="profile-logo"><i class="fa-solid fa-bag-shopping fa-lg"></i></div>
+            <a href="shopping-cart.html" style="text-decoration: none; color: black;">
+                <div class="profile-logo"><i class="fa-solid fa-bag-shopping fa-lg"></i></div>
+            </a>
         </div>
     </header>
     <div class="products-section-title">
         <h1>Toutes nos peluches</h1>
     </div>
     <main class="products">
-        <a href="product-page.html" class="product-wrapper"><div class="product"></div></a>
-        <a href="product-page.html" class="product-wrapper"><div class="product"></div></a>
-        <a href="product-page.html" class="product-wrapper"><div class="product"></div></a>
-        <a href="product-page.html" class="product-wrapper"><div class="product"></div></a>
-        <a href="product-page.html" class="product-wrapper"><div class="product"></div></a>
-        <a href="product-page.html" class="product-wrapper"><div class="product"></div></a>
+        <div class="product">
+            <a href="product-page.html?id=2" class="product-wrapper">
+                <div class="product-details"></div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product-page.html?id=2" class="product-wrapper">
+                <div class="product-details"></div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product-page.html?id=3" class="product-wrapper">
+                <div class="product-details"></div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product-page.html?id=4" class="product-wrapper">
+                <div class="product-details"></div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product-page.html?id=5" class="product-wrapper">
+                <div class="product-details"></div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="product-page.html?id=6" class="product-wrapper">
+                <div class="product-details"></div>
+            </a>
+        </div>
     </main>
     <footer class="footer">
         <div class="container">
@@ -63,7 +93,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>

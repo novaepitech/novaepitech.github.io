@@ -1,6 +1,6 @@
 @font-face {
     font-family: Feijoada;
-    src: url(fonts/Feijoada.ttf);
+    src: url(../fonts/Feijoada.ttf);
 }
 
 :root {
@@ -9,7 +9,6 @@
 }
 
 body {
-    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
     font-family: Feijoada;
     font-size: 1.2rem;
     margin: 0;
@@ -146,6 +145,11 @@ header {
 .product-wrapper {
     color: black;
     text-decoration: none;
+    max-height: 600px;
+
+    a {
+        height: 100%;
+    }
 }
 
 .product {
@@ -153,24 +157,7 @@ header {
     flex-direction: column;
     align-items: center;
     height: 650px;
-    flex-basis: 25%;
     cursor: pointer;
-
-    img {
-        height: 75%;
-        width: 100%;
-        object-fit: contain;
-        border-radius: 15px;
-        transition: transform 0.3s ease;
-    }
-
-    &:hover img {
-        transform: scale(1.02);
-    }
-
-    h1, h2 {
-        margin: 0 0 1rem 0;
-    }
 
     button {
         padding: 1rem 0 1rem 0;
@@ -191,7 +178,7 @@ header {
     }
 
     .lightgreen {
-        background-color: lightgreen;
+        background-color: #a2d4a2;
     }
 
     .lightyellow:hover,
@@ -200,6 +187,27 @@ header {
     .lightgreen:hover {
         background-color: black;
         color: white;
+    }
+}
+
+.product-details {
+    height: 600px;
+
+    img {
+        height: 80%;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+        transform: scale(1.02);
+    }
+
+    h1, h2 {
+        text-align: center;
+        margin: 0 0 1rem 0;
     }
 }
 

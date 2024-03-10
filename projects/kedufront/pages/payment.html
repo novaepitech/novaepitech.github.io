@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Paiment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../styles/payment.css">
+    <script src="https://kit.fontawesome.com/9b7c451e6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>Shipping is Free!</h2>
+    <form id="payment-form">
+        <label for="cardName">Name on Card:</label>
+        <input type="text" id="cardName" name="cardName" required>
+
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate" name="expiryDate" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required>
+
+        <input type="submit" value="Validate Order">
+    </form>
+    <script src="../scripts/payment.js"></script>
+</body>
+</html>
