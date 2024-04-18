@@ -123,9 +123,7 @@ function handle_mousemove(event, canvas, buffer, canvas_context, grid, cell_size
     const rect = canvas.getBoundingClientRect();
     const cursor_x = event.clientX - rect.left;
     const cursor_y = event.clientY - rect.top;
-    console.time('find_nearest_point')
     const nearest_point = find_nearest_point(grid, cell_size, [cursor_x, cursor_y]);
-    console.timeEnd('find_nearest_point')
 
     canvas_context.clearRect(0, 0, canvas.width, canvas.height);
     canvas_context.drawImage(buffer, 0, 0);
